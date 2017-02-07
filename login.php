@@ -1,10 +1,14 @@
 <?php
+$m = new MongoClient("mongodb://<dbuser>:<dbpassword>@ds145009.mlab.com:45009/quizz");
+$db=$m->quizz;
+
 if (isset($_POST['pseudo']) && isset($_POST['password']))
 {
     $pseudo = $_POST['pseudo'];
-    $password =$_POST['password'];
-    
+    $password =$_POST['password'];    
 }
+
+
 if ($pseudo == ahennebel  && $password == )
     {
     header('Location: http://localhost/ue3dw17/');
