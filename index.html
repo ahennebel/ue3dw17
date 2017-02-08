@@ -6,15 +6,18 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Quizzy : le Quizz de culture générale</title>
+        <title>Quizzy</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Menu principal</h1>
-        <form method='post' action=''>
-            <label>Créer une question : </label><input type="text"><input type ="submit" value="Enregistrer"/>  
+        <h1>Bienvenue sur Quizzy ! Le quizz culturel intéractif !</h1>
+        <h2>Identifiez vous :</h2>
+        <form method='post' action='login.php'>
+            <label>Pseudo<input type="text" name="pseudo" id="pseudo"/></label>
+            <label>Mot de passe<input type="password" name="password" id="password"/></label>
+            <input type="submit" value="Connexion"/>            
         </form>
-        <a href="random.php">Commencer le Quizz Culturel</a>
+        <a href="register.html">Pas encore inscrit ? C'est par ici !</a>
     </body>
 </html>

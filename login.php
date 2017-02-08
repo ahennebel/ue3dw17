@@ -1,5 +1,5 @@
 <?php
-$m = new MongoClient("mongodb://<dbuser>:<dbpassword>@ds145009.mlab.com:45009/quizz");
+$m = new MongoClient("mongodb://ahennebel:aurelie18@ds145009.mlab.com:45009/quizz");
 $db=$m->quizz;
 
 if (isset($_POST['pseudo']) && isset($_POST['password']))
@@ -9,13 +9,13 @@ if (isset($_POST['pseudo']) && isset($_POST['password']))
 }
 
 
-if ($pseudo == ahennebel  && $password == )
+if ($pseudo == ahennebel  && $password == blabla )
     {
-    header('Location: http://localhost/ue3dw17/');
+    header('Location: http://localhost/ue3dw17/menu.html');
     }
 else //On renvoi l'utilisateur avec un message alert sur la page de login
     {
-    header('Location: http://localhost/ue3dw17/indexbis.html');
+    header('Location: http://localhost/ue3dw17/index.html');
     }
     
     
