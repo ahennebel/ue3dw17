@@ -7,7 +7,10 @@ $users=$collection->find();
 if (isset($_POST['pseudo']) && isset($_POST['password']))
 {
     $pseudo = $_POST['pseudo'];
-    $password =$_POST['password'];    
+    $password =$_POST['password'];
+    session_start();
+    $_SESSION['login'] = $_POST['pseudo'];
+    $_SESSION['password'] = $_POST['password'];    
 }
 
 foreach($users as $u){    

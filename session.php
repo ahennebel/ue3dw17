@@ -16,12 +16,14 @@ if (isset ($_SESSION['login']) && isset ($_SESSION['password'])){
         if($_SESSION['login'] == $u['pseudo']){
             $login = $u['pseudo'];
             $score = $u['score'];
+            $level = $u['level'];
         }
     }
     echo '<div id="profil">';
     echo '<h2>Profil</h2>';
     echo '<p>Pseudo :'.$login.'</p>';
     echo '<p>Score : '.$score.'</p>';
+    echo '<p>Niveau :'.$level.'</p>';
     echo '<a href="logout.php">Se Deconnecter</a>';
     echo '</div>';
 }

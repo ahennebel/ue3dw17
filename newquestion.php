@@ -15,11 +15,26 @@
         $sujet = $_POST['question'];
         $proposition = $_POST['proposition'];
         $rang = $_POST['rang'];
+        $reponse = $_POST['reponse'];
         
-        $q=array('question'=>$sujet, 'proposition'=>$proposition, 'rang'=>$rang);
-        $collection->insert($q);
+        for($i=0;$i<count($proposition);$i++){
+            if($proposition[$i]==$reponse){
+                $q=array('question'=>$sujet, 'propositions'=>$proposition, 'rang'=>$rang, 'reponse'=>$reponse);
+                $collection->insert($q);
+                echo "<p>Votre question a bien été soumise et pourra être validée par les autres utilisateurs !</p>";
+            }
+            else
+            {
+                echo "<p>Vous devez écrire une réponse correcte</p>";
+                break;                
+            }
+        }
+        
+        
+        
+        
         ?>
-        <p>Votre question a bien été soumise et pourra être validée par les autres utilisateurs !</p>
+        
         <a href="menu.php">retour au menu</a>
     </body>
 </html>

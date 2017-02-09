@@ -7,7 +7,7 @@ $password = $_POST['password'];
 
 if (isset($pseudo) && isset($password)) {   
     //On les entre dans la base de données
-    $user=array('pseudo'=>$pseudo, 'password'=>$password ,'score'=>0);
+    $user=array('pseudo'=>$pseudo, 'password'=>$password ,'score'=>0, 'level'=>1);
     $collection->insert($user);
 
     session_start();
