@@ -20,8 +20,7 @@ and open the template in the editor.
         //$randomquestion=array_rand($question,10);
         //print $randomquestion;
         $i=1;        
-        foreach($question as $q) {
-            $idquestion=$q['_id'];
+        foreach($question as $q) {            
             echo $i.' '.$q['question'].'</br>';
             echo '<form method="post" action="results.php">';
 /*On liste les propositions pour chaque question en checkbox et on identifie la reponse*/            
