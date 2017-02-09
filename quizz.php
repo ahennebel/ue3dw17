@@ -25,7 +25,7 @@ and open the template in the editor.
 /*On liste les propositions pour chaque question en checkbox et on identifie la reponse*/            
             $proposition= $q['propositions'];
                 foreach($proposition as $p){
-                    if ($p == $q['reponse']){
+                    if ($p === $q['reponse']){
                         echo '<label>'.$p.'<input type="checkbox" name="win[]"/></label></br>'; 
                     }
                     else{

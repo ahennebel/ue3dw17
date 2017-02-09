@@ -14,17 +14,15 @@ and open the template in the editor.
         <p>Nom du joueur :</p>
         <p>Temps réalisé :</p>
         <p>Votre niveau :</p>        
-        <?php
-        $score=0;        
-        $winner = $_POST['win'];       
-           for($i=0;$i<count($winner);$i++){
-                if ($winner === "on"){
-                    print "bien joué";
-                    $score=$score + 1;
-                }            
-               }  
-           
-        
+        <?php  
+        $score=0;
+        //if 
+        $winner = $_POST['win'];                
+        for($i=0;$i<count($winner);$i++){            
+        if ($winner[$i] == "on"){                
+                $score=$score + 1;
+            }            
+        }
         ?>
         <p>Votre score : <?php print $score; ?> /10 </p>
         <a href="quizz.php">Recommencer</a>
