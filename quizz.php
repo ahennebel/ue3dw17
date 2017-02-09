@@ -15,7 +15,7 @@
         $question=$collection->find($questionsValide);
         //$randomquestion=array_rand($question,10);
         //print $randomquestion;
-        $i=1; 
+        $i=1;
         
         foreach($question as $q) {            
                 echo $i.' '.$q['question'].'</br>';
@@ -31,6 +31,9 @@
                         }
                     }
                 $i=$i+1;
+                if($i >= 11){
+                    break;
+                }
                 echo '</br>';
             
         }
