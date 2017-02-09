@@ -10,8 +10,7 @@ if (isset($_POST['pseudo']) && isset($_POST['password']))
     $password =$_POST['password'];    
 }
 
-foreach($users as $u){
-    print $u['pseudo']." ".$u['password'];
+foreach($users as $u){    
     if ($pseudo == ($u['pseudo'])  && $password == ($u['password']))
         {
         header('Location: menu.php');
