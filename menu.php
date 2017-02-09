@@ -16,5 +16,5 @@ and open the template in the editor.
             <label>Créer une question : </label><input type="text"><input type ="submit" value="Enregistrer"/>  
         </form>
         <a href="quizz.php">Commencer le Quizz Culturel</a>
-    </body>
+    </body>    
 </html>

@@ -14,7 +14,7 @@ foreach($users as $u){
     print $u['pseudo']." ".$u['password'];
     if ($pseudo == ($u['pseudo'])  && $password == ($u['password']))
         {
-        header('Location: menu.html');
+        header('Location: menu.php');
         }
     else //On renvoi l'utilisateur avec un message alert sur la page de login
         {
