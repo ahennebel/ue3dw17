@@ -15,8 +15,7 @@ and open the template in the editor.
         <p>Temps réalisé :</p>
         <p>Votre niveau :</p>        
         <?php  
-        $score=0;
-        //if 
+        $score=0;         
         $winner = $_POST['win'];                
         for($i=0;$i<count($winner);$i++){            
         if ($winner[$i] == "on"){                

@@ -17,6 +17,8 @@ and open the template in the editor.
         $collection=$db->Questions;
         $questionsValide = array('status'=>'valide');
         $question=$collection->find($questionsValide);
+        //$randomquestion=array_rand($question,10);
+        //print $randomquestion;
         $i=1;        
         foreach($question as $q) {
             $idquestion=$q['_id'];
