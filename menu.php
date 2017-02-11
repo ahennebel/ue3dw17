@@ -10,10 +10,7 @@
     <body>      
         
         
-        <h1>Menu principal</h1>
-        <form method='post' action='submit.php'>
-            <label>Créer une question : </label><input type="text"><input type ="submit" value="Enregistrer"/>  
-        </form>
+        <h1>Menu principal</h1>        
         <a href="submit.php">Ajouter une question</a>
         <a href="valid.php">Valider des questions</a>
         <a href="quizz.php">Commencer le Quizz Culturel</a>

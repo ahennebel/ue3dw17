@@ -17,12 +17,12 @@
             <label><input type="radio" name="rang" value=2/>2</label>
             <label><input type="radio" name="rang" value=3/>3</label>
             <label><input type="radio" name="rang" value=4/>4</label>
-            <label><input type="radio" name="rang" value=5/>3</label>
-            <label><input type="radio" name="rang" value=6/>3</label>
-            <label><input type="radio" name="rang" value=7/>3</label>
-            <label><input type="radio" name="rang" value=8/>3</label>
-            <label><input type="radio" name="rang" value=9/>3</label>
-            <label><input type="radio" name="rang" value=10/>3</label></br>
+            <label><input type="radio" name="rang" value=5/>5</label>
+            <label><input type="radio" name="rang" value=6/>6</label>
+            <label><input type="radio" name="rang" value=7/>7</label>
+            <label><input type="radio" name="rang" value=8/>8</label>
+            <label><input type="radio" name="rang" value=9/>9</label>
+            <label><input type="radio" name="rang" value=10/>10</label></br>
             <input type='submit' value="Soumettre la question"/>
         </form>
         <?php
