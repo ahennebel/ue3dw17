@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title></title>
+        <link rel="stylesheet" href="main.css" />
     </head>
     <body>
         <h1>Quizz terminé voici vos resultats :</h1>        

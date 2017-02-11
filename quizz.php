@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Quizzy : En avant pour le Quizz</title>
+        <link rel="stylesheet" href="main.css" />
     </head>
     <body>
         <h1>Quizz de culture générale :</h1>

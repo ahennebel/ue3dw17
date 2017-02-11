@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title></title>
+        <link rel="stylesheet" href="main.css" />
     </head>
     <body>
         <form method="post" action="newquestion.php">

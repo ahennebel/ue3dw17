@@ -1,0 +1,55 @@
+html {
+    font-size: 62.5%;
+    background-color:#dff0f0;
+}
+body, input, select, textarea { 
+    color: #191919;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+}
+h1, h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #191919;
+    line-height: 15px;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+h1 {
+    font-size: 32px;
+    padding: 30px;
+    text-align: center;
+}
+h2{
+    font-size: 24px;
+    margin-left: ;
+}
+p {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    }
+form{
+    display: block;
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px; 
+    background-color: #cee0f0;
+}
+label
+{
+    display: block;
+    width: 395px;
+}
+input
+{
+    display: block;
+    border-radius: .25em;
+    margin-top: 2px;
+}
+div{
+    text-align: center;
+}
+a{/*pour les liens*/
+
+}
