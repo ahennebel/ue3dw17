@@ -28,8 +28,7 @@
                 echo "<p>Vous devez écrire une réponse correcte</p>";
                 break;                
             }
-        }
-        
+        }       
         
         
         

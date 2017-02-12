@@ -22,16 +22,22 @@ and open the template in the editor.
         $i=1;
         
         foreach($question as $q) {            
-                echo $i.' '.$q['question'].' '.'Niveau : '.$q['rang'];
+                echo $i.' '.$q['question'].' '.'Niveau : '.$q['rang'].'</br>';
+                $proposition= $q['propositions'];
+                foreach($proposition as $p){
+                        print $p . '  ';
+                }
                 $i = $i +1;
+                $contenu = $q['_id'];
                 echo '<form method="post" action="validquestion.php">';
-                echo '<input type="submit" value="valider" />';                
+                echo '<input type="hidden" name="question" value='.$contenu.'>';
+                echo '<input type="submit" name="action" value="valider" />';                
                 echo '</form>'; 
                 echo '<form method="post" action="validquestion.php">';
-                echo '<input type="submit" value="supprimer" />';
+                echo '<input type="hidden" name="question" value='.$contenu.'>';
+                echo '<input type="submit" name="action" value="supprimer" />';
                 echo '</form></br>';                
-        }
-              
+        }        
         ?>
     </body>
 </html>

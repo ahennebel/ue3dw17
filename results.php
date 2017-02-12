@@ -1,5 +1,5 @@
 <?php include 'session.php'?>
-<?php $_SESSION['temps_fin']= date('s')?>;
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="main.css" />
     </head>
     <body>
+        <?php $_SESSION['temps_fin']= date('s')?>;
         <h1>Quizz terminé voici vos resultats :</h1>        
                 
         <?php
@@ -30,7 +31,7 @@
         <p>Temps réalisé : <?php print $temps;?> sec</p>
         <p>Votre niveau : <?php print $level;?></p>
         <p>Nombre de bonnes réponses : <?php print $bon ;?></p>
-        <p>Votre nouveau score : <?php print $score; ?> /10</p>
+        <p>Votre nouveau score : <?php print $score; ?> </p>
         <a href="quizz.php">Recommencer</a>
     </body>
 </html>

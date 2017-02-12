@@ -8,12 +8,11 @@
         <link rel="stylesheet" href="main.css" />
     </head>
     <body>      
-        
-        
+        <div class="content">        
         <h1>Menu principal</h1>        
         <a href="submit.php">Ajouter une question</a>
         <a href="valid.php">Valider des questions</a>
         <a href="quizz.php">Commencer le Quizz Culturel</a>
-       
+        </div>
     </body>    
 </html>
