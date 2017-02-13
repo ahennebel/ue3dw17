@@ -87,8 +87,9 @@ body .content{
     color: #191919;
     border: solid 1px;
 }
-#valid input{
+.valid {
     display: inline-block;
+    width:100px;
 }
 #profile {
     background-color: #cee0f0;
