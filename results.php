@@ -1,5 +1,5 @@
 <?php include 'session.php'?>
-
+<?php include 'bdd.php'?>
 <html>
     <head>
         <meta charset="UTF-8">

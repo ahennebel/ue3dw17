@@ -1,6 +1,5 @@
 <?php
-$m = new MongoClient("mongodb://ahennebel:aurelie18@ds145009.mlab.com:45009/quizz");
-$db=$m->quizz;
+include 'bdd.php';
 $collection=$db->Users;
 $users=$collection->find();
 

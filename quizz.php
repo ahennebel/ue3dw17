@@ -26,10 +26,10 @@
                 $proposition= $q['propositions'];
                     foreach($proposition as $p){
                         if ($p === $q['reponse']){
-                            echo '<label>'.$p.'<input type="checkbox" class="choix" name="win[]" onclick="Check()" ></label></br>'; 
+                            echo '<label>'.$p.'<input type="checkbox" id="choix" class="unlock" name="win[]" onclick="Disabled(this)" ></label></br>'; 
                         }
                         else{
-                            echo '<label>'.$p.'<input type="checkbox" class="choix" name="lose" onclick="Check()" ></label></br>';
+                            echo '<label>'.$p.'<input type="checkbox" id="choix" class="unlock" name="lose" onclick="Disabled(this)" ></label></br>';
                         }
                     }
                 $i=$i+1;
@@ -45,11 +45,13 @@
         ?>
         </div>
         <script type="text/javascript">
-            function Check(){
+            function Disabled(mycheckbox){
                 
-                if (document.getElementByClassName("choix").checked){
-                    document.getElementByClassName("choix").className = "validate";
-                }
+                    if (mycheckbox.checked){
+                        document.getElementById("choix").className = "lock";                        
+                    }
+                    document.getElementsByClassName("unlock").setAttribute("disabled", true);
+                
             }
         </script>
     </body>

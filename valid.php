@@ -1,4 +1,5 @@
 <?php include 'session.php'?>
+<?php include 'bdd.php'?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -9,9 +10,7 @@
         <h1>Questions à valider</h1>
         <div class="content">
             <h2>Voici les questions du quizz en attente de validation selectionner une action puis valider :</h2>
-            <?php
-            $m = new MongoClient("mongodb://ahennebel:aurelie18@ds145009.mlab.com:45009/quizz");
-            $db=$m->quizz;
+            <?php            
             $collection=$db->Questions;
             $questionsValide = array('status'=>'en_attente');        
             $question=$collection->find($questionsValide);

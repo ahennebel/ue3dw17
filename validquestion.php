@@ -1,4 +1,5 @@
 <?php include 'session.php'?>
+<?php include 'bdd.php'?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -8,9 +9,8 @@
         <?php
         ob_start();
         $intitule = $_POST['question']; 
-        $requete = $_POST['action'];        
-        $m = new MongoClient("mongodb://ahennebel:aurelie18@ds145009.mlab.com:45009/quizz");
-        $db=$m->quizz;
+        $requete = $_POST['action'];       
+        
         $collection=$db->Questions;
         $questionsValide = array('_id'=>$intitule);        
         $question=$collection->find($questionsValide);       

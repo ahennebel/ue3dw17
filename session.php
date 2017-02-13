@@ -1,4 +1,5 @@
 <?php session_start();?>
+<?php include 'bdd.php'?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -7,9 +8,7 @@ and open the template in the editor.
 -->
 <?php
 
-if (isset ($_SESSION['login']) && isset ($_SESSION['password'])){
-    $m = new MongoClient("mongodb://ahennebel:aurelie18@ds145009.mlab.com:45009/quizz");
-    $db=$m->quizz;
+if (isset ($_SESSION['login']) && isset ($_SESSION['password'])){    
     $collection=$db->Users;    
     $users=$collection->find();
     foreach($users as $u){

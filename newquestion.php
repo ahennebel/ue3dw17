@@ -1,4 +1,5 @@
 <?php include 'session.php'?>
+<?php include 'bdd.php'?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -7,9 +8,7 @@
     <body>
         <h1>Merci !</h1>        
         <?php
-        //A faire enregistrer les questions dans la BDD
-        $m = new MongoClient("mongodb://ahennebel:aurelie18@ds145009.mlab.com:45009/quizz");
-        $db=$m->quizz;
+        //A faire enregistrer les questions dans la BDD        
         $collection=$db->Questions;        
         
         $sujet = $_POST['question'];
