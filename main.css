@@ -87,3 +87,7 @@ body .content{
 #valid input{
     display: inline-block;
 }
+#profile{
+    height: 200px;
+    width: 175px;
+}
