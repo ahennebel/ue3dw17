@@ -91,12 +91,12 @@ body .content{
     display: inline-block;
     width:100px;
 }
-#profile {
+#profil {
     background-color: #cee0f0;
     border: solid 1px;
     width:200px;
     text-align: left;
 }
-#profile a{
+#profil a{
     margin-left: 0px;
 }

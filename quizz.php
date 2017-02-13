@@ -13,8 +13,7 @@
         <?php        
         $collection=$db->Questions;
         $questionsValide = array('rang'=>$level, 'status'=>'valide');        
-        $question=$collection->find($questionsValide);
-
+        $question=$collection->find($questionsValide);       
         $i=1;
         
         echo '<form id="quizz" method="post" action="results.php">';
@@ -24,13 +23,15 @@
                 
     /*On liste les propositions pour chaque question en checkbox et on identifie la reponse*/            
                 $proposition= $q['propositions'];
+                $v=1;
                     foreach($proposition as $p){
                         if ($p === $q['reponse']){
-                            echo '<label>'.$p.'<input type="checkbox" id="choix" class="unlock" name="win[]" onclick="Disabled(this)" ></label></br>'; 
+                            echo '<label>'.$p.'<input type="checkbox" id="check'.$v.'" class="unlock" name="win[]" onclick="call('.$v.',this)" ></label></br>'; 
                         }
                         else{
-                            echo '<label>'.$p.'<input type="checkbox" id="choix" class="unlock" name="lose" onclick="Disabled(this)" ></label></br>';
+                            echo '<label>'.$p.'<input type="checkbox" id="check'.$v.'" class="unlock" name="lose" onclick="call('.$v.',this)" ></label></br>';
                         }
+                        $v=$v+1;
                     }
                 $i=$i+1;
                 if($i >= 11){
@@ -47,13 +48,19 @@
         </div>
         
         <script type="text/javascript">
-            function Disabled(mycheckbox){
-                
-                    if (mycheckbox.checked){
-                        document.getElementById("choix").className = "lock";                        
-                    }
-                    document.getElementsByClassName("unlock").setAttribute("disabled", true);
-                
+            function call(no, value) {
+                if(no== 1){
+                    document.getElementById('check2').checked = false;
+                    document.getElementById('check3').checked = false;     
+                }
+                else if(no== 2){
+                    document.getElementById('check1').checked = false;
+                    document.getElementById('check3').checked = false; 
+                }
+                else if(no== 3){
+                    document.getElementById('check1').checked = false;
+                    document.getElementById('check2').checked = false; 
+                }
             }
         </script>
     </body>
