@@ -40,10 +40,12 @@
                 echo '</br>';
             
         }
-        echo '<input type="submit" value="Valider les reponses"/>';
+        echo '<input type="submit" value="Valider les reponses"/><a href="menu.php" class="quitter">Quitter</a>';
         echo '</form>'
         ?>
+        
         </div>
+        
         <script type="text/javascript">
             function Disabled(mycheckbox){
                 

@@ -37,6 +37,7 @@
                     echo '</div>';
             }        
             ?>
+            <a href="menu.php" class="quitter">Quitter</a>
         </div>
     </body>
 </html>
