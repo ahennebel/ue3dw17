@@ -77,8 +77,11 @@ ul{
 body .content{
     background-color: #cee0f0;
 }
-#submint #radio input{
-    display: inline-block;
+.radio{
+    display:inline;
+}
+.radio input {
+    display: inline;
 }
 #valid{
     color: #191919;

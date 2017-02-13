@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="main.css" />
     </head>
     <body>
+        <h2>Créer une question</h2>
+        <div class="content">
         <form id="submit" method="post" action="newquestion.php">
             <label>Votre question<input type="text" name="question"/></label></br>
             <label>1er choix de réponse : <input type="text" name="proposition[]"/></label></br>
@@ -26,6 +28,6 @@
             <input type='submit' value="Soumettre la question"/>
             <a href="menu.php" class="quitter">Quitter</a>
         </form>
-       
+        </div>
     </body>
 </html>
