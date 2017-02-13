@@ -50,6 +50,27 @@ input
 div{
     text-align: center;
 }
-a{/*pour les liens*/
 
+#profil{
+    position: absolute;
+    float: right;
+}
+ul li{
+    text-align: left;
+}
+#quizz{
+    display: inline-block;
+}
+.content{
+    border: solid 1px;
+}
+#submit{
+    display: inline-block;
+}
+#valid{
+    color: #191919;
+    border: solid 1px;
+}
+#valid input{
+    display: inline-block;
 }
