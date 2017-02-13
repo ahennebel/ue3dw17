@@ -28,10 +28,15 @@
           $collection->update(array('pseudo'=>$login),array('$set'=>array('level'=>$level +1)));  
         }
         ?>
-        <p>Temps réalisé : <?php print $temps;?> sec</p>
-        <p>Votre niveau : <?php print $level;?></p>
-        <p>Nombre de bonnes réponses : <?php print $bon ;?></p>
-        <p>Votre nouveau score : <?php print $score; ?> </p>
-        <a href="quizz.php">Recommencer</a>
+        <div class="content">
+            <ul>
+                <li>Temps réalisé : <?php print $temps;?> sec</li>
+                <li>Votre niveau : <?php print $level;?></li>
+                <li>Nombre de bonnes réponses : <?php print $bon ;?></li>
+                <li>Votre nouveau score : <?php print $score; ?> </li>
+            </ul>
+            <a href="quizz.php" class="recommencer">Recommencer</a>
+            <a href="menu.php" class="quitter">Quitter</a>
+        </div>
     </body>
 </html>

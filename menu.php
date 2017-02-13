@@ -9,10 +9,14 @@
     </head>
     <body>      
         <div class="content">        
-        <h1>Menu principal</h1>        
-        <a href="submit.php">Ajouter une question</a>
-        <a href="valid.php">Valider des questions</a>
-        <a href="quizz.php">Commencer le Quizz Culturel</a>
+        <h1>Menu principal</h1>
+        <ul>
+            <li><a href="submit.php">Ajouter une question</a></li>
+            <li><a href="valid.php">Valider des questions</a></li>
+            <li><a href="quizz.php">Commencer le Quizz Culturel</a></li>  
+            
+        </ul>
+        
         </div>
     </body>    
 </html>
