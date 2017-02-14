@@ -7,21 +7,22 @@ if (isset($_POST['pseudo']) && isset($_POST['password']))
 {
     $pseudo = $_POST['pseudo'];
     $password =$_POST['password'];
-     
+    $logged = false; 
     
     foreach($users as $u){    
-    if ($pseudo == ($u['pseudo'])  && $password == ($u['password']))
-        {
-        session_start();
-        $_SESSION['login'] = $_POST['pseudo'];
-        $_SESSION['password'] = $_POST['password']; 
+        if ($pseudo == ($u['pseudo'])  && $password == ($u['password']))
+            {
+            session_start();
+            $_SESSION['login'] = $_POST['pseudo'];
+            $_SESSION['password'] = $_POST['password']; 
+            $logged = true;
+            }      
+    }
+    if($logged == true){
         header('Location: menu.php');
-        }
-    else //On renvoi l'utilisateur avec un message alert sur la page de login
-        {
+    }else{
         header('Location: index.html');
-        }
- }   
+    }
 }
 
 
